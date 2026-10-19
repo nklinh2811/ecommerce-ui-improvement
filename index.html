@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Giao diện minh họa chọn vé sự kiện Ticketbox bằng HTML5 và CSS3.">
+  <title>Chọn vé sự kiện | Ticketbox - Bản mẫu</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Ticketbox - về đầu trang"><span class="brand-mark">T</span><span>ticketbox</span></a>
+    <a class="back-link" href="#events">← Danh sách sự kiện</a>
+  </header>
+
+  <main id="top" class="page-shell">
+    <section class="event-heading" aria-labelledby="event-title">
+      <div>
+        <p class="eyebrow">CHỌN VÉ SỰ KIỆN</p>
+        <h1 id="event-title">Giselle — Đêm diễn nghệ thuật</h1>
+        <p class="event-meta"><span>◷ Thứ Bảy, 20:00 · 15/11/2026</span><span>⌖ Nhà hát Thành phố, TP. Hồ Chí Minh</span></p>
+      </div>
+      <nav class="steps" aria-label="Tiến trình đặt vé">
+        <span class="step step--active"><b>1</b> Chọn vé</span><span class="step-line"></span><span class="step"><b>2</b> Thông tin</span><span class="step-line"></span><span class="step"><b>3</b> Thanh toán</span>
+      </nav>
+    </section>
+
+    <div class="booking-layout">
+      <section class="seat-panel panel" aria-labelledby="seat-heading">
+        <div class="section-heading">
+          <div><p class="eyebrow">KHU VỰC 01</p><h2 id="seat-heading">Sơ đồ chỗ ngồi</h2></div>
+          <div class="zoom-controls" aria-label="Điều khiển sơ đồ"><button type="button" aria-label="Thu nhỏ sơ đồ" title="Thu nhỏ">−</button><button type="button" aria-label="Phóng to sơ đồ" title="Phóng to">+</button></div>
+        </div>
+        <p class="helper-text">Chọn ghế bạn muốn. Sơ đồ bên dưới là dữ liệu minh họa cho bài tập.</p>
+        <div class="legend" aria-label="Chú thích trạng thái ghế">
+          <span><i class="legend-seat legend-seat--available"></i>Còn trống</span>
+          <span><i class="legend-seat legend-seat--selected">✓</i>Đang chọn</span>
+          <span><i class="legend-seat legend-seat--held">Ⅱ</i>Đang giữ</span>
+          <span><i class="legend-seat legend-seat--sold">×</i>Đã bán</span>
+        </div>
+        <div class="seat-map-wrap" tabindex="0" aria-label="Sơ đồ ghế, có thể cuộn ngang trên màn hình nhỏ">
+          <div class="stage">SÂN KHẤU</div>
+          <div class="seat-map">
+            <div class="row-label">A</div>
+            <div class="seat-row" aria-label="Hàng A">
+              <button class="seat" type="button" aria-label="Hàng A, ghế 1, còn trống">1</button><button class="seat" type="button" aria-label="Hàng A, ghế 2, còn trống">2</button><button class="seat seat--selected" type="button" aria-pressed="true" aria-label="Hàng A, ghế 3, đang chọn">✓</button><button class="seat" type="button" aria-label="Hàng A, ghế 4, còn trống">4</button><button class="seat seat--sold" type="button" disabled aria-label="Hàng A, ghế 5, đã bán">×</button><button class="seat" type="button" aria-label="Hàng A, ghế 6, còn trống">6</button><button class="seat" type="button" aria-label="Hàng A, ghế 7, còn trống">7</button><button class="seat seat--held" type="button" disabled aria-label="Hàng A, ghế 8, đang được giữ">Ⅱ</button><button class="seat" type="button" aria-label="Hàng A, ghế 9, còn trống">9</button><button class="seat" type="button" aria-label="Hàng A, ghế 10, còn trống">10</button>
+            </div>
+            <div class="row-label">B</div>
+            <div class="seat-row" aria-label="Hàng B">
+              <button class="seat" type="button" aria-label="Hàng B, ghế 1, còn trống">1</button><button class="seat" type="button" aria-label="Hàng B, ghế 2, còn trống">2</button><button class="seat" type="button" aria-label="Hàng B, ghế 3, còn trống">3</button><button class="seat seat--sold" type="button" disabled aria-label="Hàng B, ghế 4, đã bán">×</button><button class="seat" type="button" aria-label="Hàng B, ghế 5, còn trống">5</button><button class="seat" type="button" aria-label="Hàng B, ghế 6, còn trống">6</button><button class="seat" type="button" aria-label="Hàng B, ghế 7, còn trống">7</button><button class="seat" type="button" aria-label="Hàng B, ghế 8, còn trống">8</button><button class="seat" type="button" aria-label="Hàng B, ghế 9, còn trống">9</button><button class="seat" type="button" aria-label="Hàng B, ghế 10, còn trống">10</button>
+            </div>
+            <div class="row-label">C</div>
+            <div class="seat-row" aria-label="Hàng C">
+              <button class="seat" type="button" aria-label="Hàng C, ghế 1, còn trống">1</button><button class="seat seat--sold" type="button" disabled aria-label="Hàng C, ghế 2, đã bán">×</button><button class="seat" type="button" aria-label="Hàng C, ghế 3, còn trống">3</button><button class="seat" type="button" aria-label="Hàng C, ghế 4, còn trống">4</button><button class="seat" type="button" aria-label="Hàng C, ghế 5, còn trống">5</button><button class="seat" type="button" aria-label="Hàng C, ghế 6, còn trống">6</button><button class="seat" type="button" aria-label="Hàng C, ghế 7, còn trống">7</button><button class="seat" type="button" aria-label="Hàng C, ghế 8, còn trống">8</button><button class="seat seat--held" type="button" disabled aria-label="Hàng C, ghế 9, đang được giữ">Ⅱ</button><button class="seat" type="button" aria-label="Hàng C, ghế 10, còn trống">10</button>
+            </div>
+            <div class="row-label">D</div>
+            <div class="seat-row" aria-label="Hàng D">
+              <button class="seat" type="button" aria-label="Hàng D, ghế 1, còn trống">1</button><button class="seat" type="button" aria-label="Hàng D, ghế 2, còn trống">2</button><button class="seat" type="button" aria-label="Hàng D, ghế 3, còn trống">3</button><button class="seat" type="button" aria-label="Hàng D, ghế 4, còn trống">4</button><button class="seat" type="button" aria-label="Hàng D, ghế 5, còn trống">5</button><button class="seat seat--sold" type="button" disabled aria-label="Hàng D, ghế 6, đã bán">×</button><button class="seat" type="button" aria-label="Hàng D, ghế 7, còn trống">7</button><button class="seat" type="button" aria-label="Hàng D, ghế 8, còn trống">8</button><button class="seat" type="button" aria-label="Hàng D, ghế 9, còn trống">9</button><button class="seat" type="button" aria-label="Hàng D, ghế 10, còn trống">10</button>
+            </div>
+          </div>
+        </div>
+        <div class="map-note"><span class="info-icon">i</span><p><strong>Mẹo chọn ghế</strong><br>Chạm vào ghế còn trống để chọn hoặc bỏ chọn. Trên điện thoại, vuốt ngang để xem toàn bộ sơ đồ.</p></div>
+      </section>
+
+      <aside class="details-column" aria-label="Thông tin vé và đơn hàng">
+        <section class="panel ticket-panel" aria-labelledby="ticket-heading">
+          <div class="section-heading"><div><p class="eyebrow">KHU VỰC 02</p><h2 id="ticket-heading">Hạng vé</h2></div></div>
+          <p class="helper-text">Chọn hạng để xem khu vực tương ứng trên sơ đồ.</p>
+          <div class="ticket-option ticket-option--active">
+            <span class="ticket-color ticket-color--rose" aria-hidden="true"></span>
+            <div class="ticket-copy"><h3>Hoa hồng</h3><p>Khu trung tâm · Tầm nhìn gần sân khấu</p><span class="availability">Còn vé · minh họa</span></div>
+            <strong>350.000đ</strong>
+          </div>
+          <div class="ticket-option">
+            <span class="ticket-color ticket-color--gold" aria-hidden="true"></span>
+            <div class="ticket-copy"><h3>Hướng dương</h3><p>Khu giữa · Góc nhìn cân đối</p><span class="availability">Còn vé · minh họa</span></div>
+            <strong>250.000đ</strong>
+          </div>
+          <div class="ticket-option">
+            <span class="ticket-color ticket-color--blue" aria-hidden="true"></span>
+            <div class="ticket-copy"><h3>Tulip</h3><p>Khu phía sau · Lựa chọn tiết kiệm</p><span class="availability">Còn vé · minh họa</span></div>
+            <strong>180.000đ</strong>
+          </div>
+          <p class="demo-disclaimer">Tên hạng vé, giá và vị trí chỉ là ví dụ, không phải thông tin bán vé thật.</p>
+        </section>
+
+        <section class="panel summary-panel" aria-labelledby="summary-heading">
+          <div class="section-heading"><div><p class="eyebrow">KHU VỰC 03</p><h2 id="summary-heading">Vé đã chọn</h2></div><span class="count-pill">1 vé</span></div>
+          <div class="selected-ticket"><div><strong>Hoa hồng</strong><p>Hàng A · Ghế 3</p></div><strong>350.000đ</strong></div>
+          <div class="price-line"><span>Tạm tính</span><span>350.000đ</span></div>
+          <div class="price-line"><span>Phí dịch vụ</span><span>Chưa tính</span></div>
+          <div class="price-total"><span>Tổng cộng dự kiến</span><strong>350.000đ</strong></div>
+          <button class="continue-button" type="button">Tiếp tục <span aria-hidden="true">→</span></button>
+          <p class="secure-note">⌑ Kiểm tra kỹ hạng vé và vị trí trước khi tiếp tục.</p>
+        </section>
+      </aside>
+    </div>
+    <section id="events" class="sample-products" aria-labelledby="sample-heading">
+      <div><p class="eyebrow">THẺ SỰ KIỆN MẪU</p><h2 id="sample-heading">Khám phá sự kiện khác</h2><p class="helper-text">Bốn thẻ mẫu minh họa khu vực sản phẩm/sự kiện theo yêu cầu bài tập.</p></div>
+      <div class="event-grid">
+        <article class="event-card"><img src="https://images.unsplash.com/photo-1501386761578-eac5c94b800a?auto=format&fit=crop&w=700&q=80" alt="Khán giả tham dự buổi hòa nhạc" loading="lazy"><div class="event-card__body"><span class="card-tag">ÂM NHẠC</span><h3>Đêm nhạc thanh xuân</h3><p>22/11/2026 · TP. Hồ Chí Minh</p><div class="card-bottom"><strong>Từ 299.000đ</strong><a href="#top">Xem vé</a></div></div></article>
+        <article class="event-card"><img src="https://images.unsplash.com/photo-1503095396549-807759245b35?auto=format&fit=crop&w=700&q=80" alt="Sân khấu biểu diễn nghệ thuật" loading="lazy"><div class="event-card__body"><span class="card-tag">SÂN KHẤU</span><h3>Đêm diễn nghệ thuật</h3><p>28/11/2026 · TP. Hồ Chí Minh</p><div class="card-bottom"><strong>Từ 180.000đ</strong><a href="#top">Xem vé</a></div></div></article>
+        <article class="event-card"><img src="https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?auto=format&fit=crop&w=700&q=80" alt="Sân khấu sự kiện với ánh sáng" loading="lazy"><div class="event-card__body"><span class="card-tag">LỄ HỘI</span><h3>City Lights Festival</h3><p>05/12/2026 · TP. Hồ Chí Minh</p><div class="card-bottom"><strong>Từ 450.000đ</strong><a href="#top">Xem vé</a></div></div></article>
+        <article class="event-card"><img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=700&q=80" alt="Không gian sự kiện trong nhà" loading="lazy"><div class="event-card__body"><span class="card-tag">TRẢI NGHIỆM</span><h3>Ngày hội sáng tạo</h3><p>12/12/2026 · TP. Hồ Chí Minh</p><div class="card-bottom"><strong>Từ 120.000đ</strong><a href="#top">Xem vé</a></div></div></article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><p>Giao diện học tập minh họa · Không liên kết hệ thống đặt vé thật.</p><a href="#top">Lên đầu trang ↑</a></footer>
+</body>
+</html>
