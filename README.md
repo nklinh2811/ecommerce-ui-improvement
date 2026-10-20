@@ -49,6 +49,6 @@ xây dựng cấu trúc HTML5 và tổ chức CSS3 cho giao diện chọn vé.
 
 Sau khi nhận được kết quả hỗ trợ, em tiến hành xem xét mức độ phù hợp với yêu cầu bài tập, 
 kiểm tra giao diện trên trình duyệt ở các kích thước màn hình khác nhau và điều chỉnh bố cục khu vực hạng vé, 
-sơ đồ ghế nhằm làm rõ trình tự lựa chọn. Tôi cũng rà soát cấu trúc mã nguồn và đường dẫn CSS 
+sơ đồ ghế nhằm làm rõ trình tự lựa chọn. Em cũng rà soát cấu trúc mã nguồn và đường dẫn CSS 
 để đảm bảo giao diện hiển thị đúng sau khi sắp xếp lại các tệp.
 
