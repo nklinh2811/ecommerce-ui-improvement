@@ -3,110 +3,304 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Giao diện minh họa chọn vé sự kiện Ticketbox bằng HTML5 và CSS3.">
-  <title>Chọn vé sự kiện | Ticketbox - Bản mẫu</title>
+  <meta name="description" content="Giao diện minh họa chọn vé sự kiện Giselle, có sơ đồ tổng quan, lựa chọn hạng vé và chọn ghế.">
+  <meta name="theme-color" content="#ffffff">
+  <title>Chọn vé sự kiện | Giselle - Ticketbox</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body id="top">
   <header class="site-header">
-    <a class="brand" href="#top" aria-label="Ticketbox - về đầu trang"><span class="brand-mark">T</span><span>ticketbox</span></a>
-    <a class="back-link" href="#events">← Danh sách sự kiện</a>
+    <a class="brand" href="#top" aria-label="Ticketbox - về đầu trang">
+      <span class="brand-mark" aria-hidden="true">T</span>
+      <span>ticketbox</span>
+    </a>
+    <a class="back-link" href="#suggested-events">Khám phá sự kiện khác</a>
   </header>
 
-  <main id="top" class="page-shell">
-    <section class="event-heading" aria-labelledby="event-title">
+  <main class="page-shell">
+    <header class="event-heading" aria-labelledby="event-title">
       <div>
         <p class="eyebrow">CHỌN VÉ SỰ KIỆN</p>
         <h1 id="event-title">Giselle — Đêm diễn nghệ thuật</h1>
-        <p class="event-meta"><span>◷ Thứ Bảy, 20:00 · 15/11/2026</span><span>⌖ Nhà hát Thành phố, TP. Hồ Chí Minh</span></p>
+        <p class="event-meta">
+          <span>◷ Thứ Bảy, 20:00 · 15/11/2026</span>
+          <span>⌖ Nhà hát Thành phố, TP. Hồ Chí Minh</span>
+        </p>
       </div>
       <nav class="steps" aria-label="Tiến trình đặt vé">
-        <span class="step step--active"><b>1</b> Chọn vé</span><span class="step-line"></span><span class="step"><b>2</b> Thông tin</span><span class="step-line"></span><span class="step"><b>3</b> Thanh toán</span>
+        <ol>
+          <li aria-current="step"><span class="step-number">1</span>Chọn vé</li>
+          <li><span class="step-number">2</span>Thông tin</li>
+          <li><span class="step-number">3</span>Thanh toán</li>
+        </ol>
       </nav>
+    </header>
+
+    <section class="panel" aria-labelledby="overview-heading">
+      <div class="overview-intro">
+        <div>
+          <p class="eyebrow">BƯỚC 1 · QUAN SÁT TỔNG THỂ</p>
+          <h2 id="overview-heading">Sơ đồ tổng quan phòng diễn</h2>
+          <p class="helper-text">Quan sát vị trí sân khấu và các khu vực vé trước khi chọn hạng vé và ghế cụ thể.</p>
+        </div>
+        <span class="overview-badge">Sơ đồ minh họa</span>
+      </div>
+      <div class="overview-map" role="img" aria-label="Sơ đồ tổng quan gồm sân khấu phía trước và ba khu vực ghế: Hoa hồng ở gần sân khấu, Hướng dương ở giữa, Tulip ở phía sau.">
+        <div class="stage">SÂN KHẤU</div>
+        <div class="overview-zones">
+          <div class="zone zone--rose">Hoa hồng<small>Khu trung tâm · Gần sân khấu</small></div>
+          <div class="zone zone--gold">Hướng dương<small>Khu giữa · Góc nhìn cân đối</small></div>
+          <div class="zone zone--blue">Tulip<small>Khu phía sau · Tiết kiệm</small></div>
+        </div>
+        <p class="map-caption">Sơ đồ phân khu mang tính minh họa, không phải sơ đồ mặt bằng thực tế.</p>
+      </div>
     </section>
 
-    <div class="booking-layout">
-      <section class="panel ticket-panel" aria-labelledby="ticket-heading">
-        <div class="section-heading"><div><p class="eyebrow">KHU VỰC 01</p><h2 id="ticket-heading">Hạng vé</h2></div></div>
-        <p class="helper-text">Bước 1: Chọn hạng vé phù hợp, sau đó chọn ghế trong sơ đồ bên dưới.</p>
-        <div class="ticket-options">
-          <div class="ticket-option ticket-option--active">
-            <span class="ticket-color ticket-color--rose" aria-hidden="true"></span>
-            <div class="ticket-copy"><h3>Hoa hồng</h3><p>Khu trung tâm · Tầm nhìn gần sân khấu</p><span class="availability">Còn vé · minh họa</span></div>
-            <strong>350.000đ</strong>
-          </div>
-          <div class="ticket-option">
-            <span class="ticket-color ticket-color--gold" aria-hidden="true"></span>
-            <div class="ticket-copy"><h3>Hướng dương</h3><p>Khu giữa · Góc nhìn cân đối</p><span class="availability">Còn vé · minh họa</span></div>
-            <strong>250.000đ</strong>
-          </div>
-          <div class="ticket-option">
-            <span class="ticket-color ticket-color--blue" aria-hidden="true"></span>
-            <div class="ticket-copy"><h3>Tulip</h3><p>Khu phía sau · Lựa chọn tiết kiệm</p><span class="availability">Còn vé · minh họa</span></div>
-            <strong>180.000đ</strong>
-          </div>
-        </div>
-        <p class="demo-disclaimer">Tên hạng vé, giá và vị trí chỉ là ví dụ, không phải thông tin bán vé thật.</p>
-      </section>
+    <form id="booking-form" action="#booking-summary" method="get">
+      <div class="booking-grid">
+        <div>
+          <section class="panel" aria-labelledby="ticket-heading">
+            <p class="eyebrow">BƯỚC 2 · CHỌN HẠNG VÉ</p>
+            <div class="section-heading">
+              <h2 id="ticket-heading">Hạng vé</h2>
+            </div>
+            <p class="helper-text">Chọn một hạng vé để xem và lựa chọn ghế thuộc khu vực tương ứng.</p>
+            <fieldset style="border:0;padding:0;margin:0">
+              <legend class="helper-text" style="position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0">Chọn một hạng vé</legend>
+              <ul class="ticket-list">
+                <li>
+                  <button class="ticket-choice" type="button" data-tier="rose" aria-pressed="true">
+                    <span><span class="color-dot color-dot--rose" aria-hidden="true"></span><strong>Hoa hồng</strong></span>
+                    <span class="description">Khu trung tâm · Tầm nhìn gần sân khấu</span>
+                    <span class="availability">Còn vé · minh họa</span>
+                    <span class="price">350.000đ</span>
+                  </button>
+                </li>
+                <li>
+                  <button class="ticket-choice" type="button" data-tier="gold" aria-pressed="false">
+                    <span><span class="color-dot color-dot--gold" aria-hidden="true"></span><strong>Hướng dương</strong></span>
+                    <span class="description">Khu giữa · Góc nhìn cân đối</span>
+                    <span class="availability">Còn vé · minh họa</span>
+                    <span class="price">250.000đ</span>
+                  </button>
+                </li>
+                <li>
+                  <button class="ticket-choice" type="button" data-tier="blue" aria-pressed="false">
+                    <span><span class="color-dot color-dot--blue" aria-hidden="true"></span><strong>Tulip</strong></span>
+                    <span class="description">Khu phía sau · Lựa chọn tiết kiệm</span>
+                    <span class="availability">Còn vé · minh họa</span>
+                    <span class="price">180.000đ</span>
+                  </button>
+                </li>
+              </ul>
+            </fieldset>
+            <p class="helper-text">Tên hạng vé, giá và vị trí chỉ là ví dụ, không phải thông tin bán vé thật.</p>
+          </section>
 
-      <section class="seat-panel panel" aria-labelledby="seat-heading">
-        <div class="section-heading">
-          <div><p class="eyebrow">KHU VỰC 02</p><h2 id="seat-heading">Sơ đồ chỗ ngồi</h2></div>
-          <div class="zoom-controls" aria-label="Điều khiển sơ đồ"><button type="button" aria-label="Thu nhỏ sơ đồ" title="Thu nhỏ">−</button><button type="button" aria-label="Phóng to sơ đồ" title="Phóng to">+</button></div>
+          <section class="panel" aria-labelledby="seat-heading">
+            <p class="eyebrow">BƯỚC 3 · CHỌN GHẾ</p>
+            <div class="section-heading">
+              <h2 id="seat-heading">Sơ đồ chỗ ngồi</h2>
+              <div class="seat-tools" aria-label="Điều khiển kích thước sơ đồ">
+                <button class="tool-button" id="zoom-out" type="button" aria-label="Thu nhỏ sơ đồ" title="Thu nhỏ">−</button>
+                <button class="tool-button" id="zoom-in" type="button" aria-label="Phóng to sơ đồ" title="Phóng to">+</button>
+              </div>
+            </div>
+            <p class="helper-text" id="seat-instruction">Đang xem khu vực Hoa hồng. Chọn ghế còn trống thuộc hạng vé đã chọn.</p>
+            <div class="legend" aria-label="Chú thích trạng thái ghế">
+              <span class="legend-item"><span class="legend-swatch swatch-available" aria-hidden="true"></span>Còn trống</span>
+              <span class="legend-item"><span class="legend-swatch swatch-selected" aria-hidden="true">✓</span>Đang chọn</span>
+              <span class="legend-item"><span class="legend-swatch swatch-held" aria-hidden="true">Ⅱ</span>Đang giữ</span>
+              <span class="legend-item"><span class="legend-swatch swatch-sold" aria-hidden="true">×</span>Đã bán</span>
+            </div>
+            <div class="seat-map-wrap" tabindex="0" aria-label="Sơ đồ ghế; có thể cuộn ngang trên màn hình nhỏ">
+              <div class="seat-map" id="seat-map">
+                <div class="stage">SÂN KHẤU</div>
+                <div class="seat-row-wrap"><span class="row-label">A</span><div class="seat-row" data-row="A"></div></div>
+                <div class="seat-row-wrap"><span class="row-label">B</span><div class="seat-row" data-row="B"></div></div>
+                <div class="seat-row-wrap"><span class="row-label">C</span><div class="seat-row" data-row="C"></div></div>
+                <div class="seat-row-wrap"><span class="row-label">D</span><div class="seat-row" data-row="D"></div></div>
+              </div>
+            </div>
+            <p class="map-note"><strong>Mẹo chọn ghế:</strong> Chọn hạng vé trước, sau đó chọn một hoặc nhiều ghế còn trống. Trên điện thoại, vuốt ngang để xem toàn bộ sơ đồ.</p>
+            <p class="status-message" id="seat-status" role="status" aria-live="polite"></p>
+          </section>
         </div>
-        <p class="helper-text">Bước 2: Chọn ghế còn trống thuộc hạng vé bạn đã chọn. Sơ đồ bên dưới là dữ liệu minh họa cho bài tập.</p>
-        <div class="legend" aria-label="Chú thích trạng thái ghế">
-          <span><i class="legend-seat legend-seat--available"></i>Còn trống</span>
-          <span><i class="legend-seat legend-seat--selected">✓</i>Đang chọn</span>
-          <span><i class="legend-seat legend-seat--held">Ⅱ</i>Đang giữ</span>
-          <span><i class="legend-seat legend-seat--sold">×</i>Đã bán</span>
-        </div>
-        <div class="seat-map-wrap" tabindex="0" aria-label="Sơ đồ ghế, có thể cuộn ngang trên màn hình nhỏ">
-          <div class="stage">SÂN KHẤU</div>
-          <div class="seat-map">
-            <div class="row-label">A</div>
-            <div class="seat-row" aria-label="Hàng A">
-              <button class="seat" type="button" aria-label="Hàng A, ghế 1, còn trống">1</button><button class="seat" type="button" aria-label="Hàng A, ghế 2, còn trống">2</button><button class="seat seat--selected" type="button" aria-pressed="true" aria-label="Hàng A, ghế 3, đang chọn">✓</button><button class="seat" type="button" aria-label="Hàng A, ghế 4, còn trống">4</button><button class="seat seat--sold" type="button" disabled aria-label="Hàng A, ghế 5, đã bán">×</button><button class="seat" type="button" aria-label="Hàng A, ghế 6, còn trống">6</button><button class="seat" type="button" aria-label="Hàng A, ghế 7, còn trống">7</button><button class="seat seat--held" type="button" disabled aria-label="Hàng A, ghế 8, đang được giữ">Ⅱ</button><button class="seat" type="button" aria-label="Hàng A, ghế 9, còn trống">9</button><button class="seat" type="button" aria-label="Hàng A, ghế 10, còn trống">10</button>
-            </div>
-            <div class="row-label">B</div>
-            <div class="seat-row" aria-label="Hàng B">
-              <button class="seat" type="button" aria-label="Hàng B, ghế 1, còn trống">1</button><button class="seat" type="button" aria-label="Hàng B, ghế 2, còn trống">2</button><button class="seat" type="button" aria-label="Hàng B, ghế 3, còn trống">3</button><button class="seat seat--sold" type="button" disabled aria-label="Hàng B, ghế 4, đã bán">×</button><button class="seat" type="button" aria-label="Hàng B, ghế 5, còn trống">5</button><button class="seat" type="button" aria-label="Hàng B, ghế 6, còn trống">6</button><button class="seat" type="button" aria-label="Hàng B, ghế 7, còn trống">7</button><button class="seat" type="button" aria-label="Hàng B, ghế 8, còn trống">8</button><button class="seat" type="button" aria-label="Hàng B, ghế 9, còn trống">9</button><button class="seat" type="button" aria-label="Hàng B, ghế 10, còn trống">10</button>
-            </div>
-            <div class="row-label">C</div>
-            <div class="seat-row" aria-label="Hàng C">
-              <button class="seat" type="button" aria-label="Hàng C, ghế 1, còn trống">1</button><button class="seat seat--sold" type="button" disabled aria-label="Hàng C, ghế 2, đã bán">×</button><button class="seat" type="button" aria-label="Hàng C, ghế 3, còn trống">3</button><button class="seat" type="button" aria-label="Hàng C, ghế 4, còn trống">4</button><button class="seat" type="button" aria-label="Hàng C, ghế 5, còn trống">5</button><button class="seat" type="button" aria-label="Hàng C, ghế 6, còn trống">6</button><button class="seat" type="button" aria-label="Hàng C, ghế 7, còn trống">7</button><button class="seat" type="button" aria-label="Hàng C, ghế 8, còn trống">8</button><button class="seat seat--held" type="button" disabled aria-label="Hàng C, ghế 9, đang được giữ">Ⅱ</button><button class="seat" type="button" aria-label="Hàng C, ghế 10, còn trống">10</button>
-            </div>
-            <div class="row-label">D</div>
-            <div class="seat-row" aria-label="Hàng D">
-              <button class="seat" type="button" aria-label="Hàng D, ghế 1, còn trống">1</button><button class="seat" type="button" aria-label="Hàng D, ghế 2, còn trống">2</button><button class="seat" type="button" aria-label="Hàng D, ghế 3, còn trống">3</button><button class="seat" type="button" aria-label="Hàng D, ghế 4, còn trống">4</button><button class="seat" type="button" aria-label="Hàng D, ghế 5, còn trống">5</button><button class="seat seat--sold" type="button" disabled aria-label="Hàng D, ghế 6, đã bán">×</button><button class="seat" type="button" aria-label="Hàng D, ghế 7, còn trống">7</button><button class="seat" type="button" aria-label="Hàng D, ghế 8, còn trống">8</button><button class="seat" type="button" aria-label="Hàng D, ghế 9, còn trống">9</button><button class="seat" type="button" aria-label="Hàng D, ghế 10, còn trống">10</button>
-            </div>
+
+        <aside class="panel summary-panel" id="booking-summary" aria-labelledby="summary-heading">
+          <div class="section-heading">
+            <h2 id="summary-heading">Vé đã chọn</h2>
+            <span class="count-pill" id="ticket-count">0 vé</span>
           </div>
-        </div>
-        <div class="map-note"><span class="info-icon">i</span><p><strong>Mẹo chọn ghế</strong><br>Chạm vào ghế còn trống để chọn hoặc bỏ chọn. Trên điện thoại, vuốt ngang để xem toàn bộ sơ đồ.</p></div>
-      </section>
+          <ul class="selected-list" id="selected-list">
+            <li><span>Chưa chọn ghế<small>Vui lòng chọn ghế trên sơ đồ</small></span><strong>—</strong></li>
+          </ul>
+          <div class="price-line"><span>Tạm tính</span><strong id="subtotal">0đ</strong></div>
+          <div class="price-line"><span>Phí dịch vụ</span><span>Chưa tính</span></div>
+          <div class="price-total"><span>Tổng cộng dự kiến</span><strong id="total">0đ</strong></div>
+          <button class="continue-button" id="continue-button" type="submit" disabled>Tiếp tục <span aria-hidden="true">→</span></button>
+          <p class="secure-note">Đây là giao diện học tập; chưa kết nối hệ thống đặt vé hoặc thanh toán thật.</p>
+          <p class="status-message" id="form-status" role="status" aria-live="polite"></p>
+        </aside>
+      </div>
+    </form>
 
-      <section class="panel summary-panel" aria-labelledby="summary-heading">
-        <div class="section-heading"><div><p class="eyebrow">KHU VỰC 03</p><h2 id="summary-heading">Vé đã chọn</h2></div><span class="count-pill">1 vé</span></div>
-        <div class="selected-ticket"><div><strong>Hoa hồng</strong><p>Hàng A · Ghế 3</p></div><strong>350.000đ</strong></div>
-        <div class="price-line"><span>Tạm tính</span><span>350.000đ</span></div>
-        <div class="price-line"><span>Phí dịch vụ</span><span>Chưa tính</span></div>
-        <div class="price-total"><span>Tổng cộng dự kiến</span><strong>350.000đ</strong></div>
-        <button class="continue-button" type="button">Tiếp tục <span aria-hidden="true">→</span></button>
-        <p class="secure-note">⌑ Kiểm tra kỹ hạng vé và vị trí trước khi tiếp tục.</p>
-      </section>
-    </div>
-
-    <section id="events" class="sample-products" aria-labelledby="sample-heading">
-      <div><p class="eyebrow">THẺ SỰ KIỆN MẪU</p><h2 id="sample-heading">Khám phá sự kiện khác</h2><p class="helper-text">Bốn thẻ mẫu minh họa khu vực sản phẩm/sự kiện theo yêu cầu bài tập.</p></div>
+    <section class="sample-events" id="suggested-events" aria-labelledby="sample-heading">
+      <p class="eyebrow">GỢI Ý DÀNH CHO BẠN</p>
+      <h2 id="sample-heading">Khám phá sự kiện khác</h2>
+      <p class="helper-text">Một số sự kiện mẫu được trình bày để minh họa khu vực gợi ý.</p>
       <div class="event-grid">
-        <article class="event-card"><img src="https://images.unsplash.com/photo-1501386761578-eac5c94b800a?auto=format&fit=crop&w=700&q=80" alt="Khán giả tham dự buổi hòa nhạc" loading="lazy"><div class="event-card__body"><span class="card-tag">ÂM NHẠC</span><h3>Đêm nhạc thanh xuân</h3><p>22/11/2026 · TP. Hồ Chí Minh</p><div class="card-bottom"><strong>Từ 299.000đ</strong><a href="#top">Xem vé</a></div></div></article>
-        <article class="event-card"><img src="https://images.unsplash.com/photo-1503095396549-807759245b35?auto=format&fit=crop&w=700&q=80" alt="Sân khấu biểu diễn nghệ thuật" loading="lazy"><div class="event-card__body"><span class="card-tag">SÂN KHẤU</span><h3>Đêm diễn nghệ thuật</h3><p>28/11/2026 · TP. Hồ Chí Minh</p><div class="card-bottom"><strong>Từ 180.000đ</strong><a href="#top">Xem vé</a></div></div></article>
-        <article class="event-card"><img src="https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?auto=format&fit=crop&w=700&q=80" alt="Sân khấu sự kiện với ánh sáng" loading="lazy"><div class="event-card__body"><span class="card-tag">LỄ HỘI</span><h3>City Lights Festival</h3><p>05/12/2026 · TP. Hồ Chí Minh</p><div class="card-bottom"><strong>Từ 450.000đ</strong><a href="#top">Xem vé</a></div></div></article>
-        <article class="event-card"><img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=700&q=80" alt="Không gian sự kiện trong nhà" loading="lazy"><div class="event-card__body"><span class="card-tag">TRẢI NGHIỆM</span><h3>Ngày hội sáng tạo</h3><p>12/12/2026 · TP. Hồ Chí Minh</p><div class="card-bottom"><strong>Từ 120.000đ</strong><a href="#top">Xem vé</a></div></div></article>
+        <article class="event-card">
+          <img src="https://images.unsplash.com/photo-1501386761578-eac5c94b800a?auto=format&fit=crop&w=700&q=80" alt="Khán giả tham dự buổi hòa nhạc" loading="lazy">
+          <div class="event-card__body"><span class="card-tag">ÂM NHẠC</span><h3>Đêm nhạc thanh xuân</h3><p>22/11/2026 · TP. Hồ Chí Minh</p><div class="card-bottom"><strong>Từ 299.000đ</strong><a class="event-link" href="#event-title">Thông tin sự kiện</a></div></div>
+        </article>
+        <article class="event-card">
+          <img src="https://images.unsplash.com/photo-1503095396549-807759245b35?auto=format&fit=crop&w=700&q=80" alt="Sân khấu biểu diễn nghệ thuật" loading="lazy">
+          <div class="event-card__body"><span class="card-tag">SÂN KHẤU</span><h3>Đêm diễn nghệ thuật</h3><p>28/11/2026 · TP. Hồ Chí Minh</p><div class="card-bottom"><strong>Từ 180.000đ</strong><a class="event-link" href="#event-title">Thông tin sự kiện</a></div></div>
+        </article>
+        <article class="event-card">
+          <img src="https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?auto=format&fit=crop&w=700&q=80" alt="Sân khấu sự kiện với ánh sáng" loading="lazy">
+          <div class="event-card__body"><span class="card-tag">LỄ HỘI</span><h3>City Lights Festival</h3><p>05/12/2026 · TP. Hồ Chí Minh</p><div class="card-bottom"><strong>Từ 450.000đ</strong><a class="event-link" href="#event-title">Thông tin sự kiện</a></div></div>
+        </article>
+        <article class="event-card">
+          <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=700&q=80" alt="Không gian sự kiện trong nhà" loading="lazy">
+          <div class="event-card__body"><span class="card-tag">TRẢI NGHIỆM</span><h3>Ngày hội sáng tạo</h3><p>12/12/2026 · TP. Hồ Chí Minh</p><div class="card-bottom"><strong>Từ 120.000đ</strong><a class="event-link" href="#event-title">Thông tin sự kiện</a></div></div>
+        </article>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer"><p>Giao diện học tập minh họa · Không liên kết hệ thống đặt vé thật.</p><a href="#top">Lên đầu trang ↑</a></footer>
+  <footer class="site-footer">
+    <p>Giao diện học tập minh họa · Không liên kết hệ thống đặt vé thật.</p>
+    <a href="#top">Lên đầu trang ↑</a>
+  </footer>
+
+  <script>
+    (() => {
+      const tiers = {
+        rose: { name: "Hoa hồng", price: 350000, className: "seat--rose" },
+        gold: { name: "Hướng dương", price: 250000, className: "seat--gold" },
+        blue: { name: "Tulip", price: 180000, className: "seat--blue" }
+      };
+      const selectedTierButtons = [...document.querySelectorAll("[data-tier]")];
+      const selectedSeats = new Map();
+      const soldSeats = new Set(["A-5", "B-4", "C-2", "D-6"]);
+      const heldSeats = new Set(["A-8", "C-9"]);
+      let activeTier = "rose";
+      let zoom = 1;
+
+      function tierForSeat(row, number) {
+        // Phân khu minh họa: ghế gần trung tâm thuộc Hoa hồng,
+        // khu giữa thuộc Hướng dương, khu phía sau thuộc Tulip.
+        if (row === "A" || (row === "B" && number <= 5)) return "rose";
+        if (row === "B" || row === "C") return "gold";
+        return "blue";
+      }
+
+      function renderSeats() {
+        document.querySelectorAll(".seat-row").forEach(rowElement => {
+          const row = rowElement.dataset.row;
+          rowElement.replaceChildren();
+          for (let number = 1; number <= 10; number++) {
+            const id = `${row}-${number}`;
+            const tier = tierForSeat(row, number);
+            const button = document.createElement("button");
+            button.type = "button";
+            button.className = "seat";
+            button.textContent = number;
+            button.dataset.seat = id;
+            button.dataset.tier = tier;
+            button.setAttribute("aria-label", `Hàng ${row}, ghế ${number}, hạng ${tiers[tier].name}`);
+            if (tier === activeTier) button.classList.add(tiers[tier].className);
+            if (soldSeats.has(id)) {
+              button.disabled = true;
+              button.classList.add("seat--sold");
+              button.textContent = "×";
+              button.setAttribute("aria-label", `Hàng ${row}, ghế ${number}, đã bán`);
+            } else if (heldSeats.has(id)) {
+              button.disabled = true;
+              button.classList.add("seat--held");
+              button.textContent = "Ⅱ";
+              button.setAttribute("aria-label", `Hàng ${row}, ghế ${number}, đang được giữ`);
+            } else {
+              button.hidden = tier !== activeTier;
+              button.setAttribute("aria-pressed", selectedSeats.has(id) ? "true" : "false");
+              if (selectedSeats.has(id)) button.textContent = "✓";
+              button.addEventListener("click", () => toggleSeat(id, tier));
+            }
+            rowElement.append(button);
+          }
+        });
+        document.getElementById("seat-instruction").textContent =
+          `Đang xem khu vực ${tiers[activeTier].name}. Các ghế hiển thị thuộc hạng vé này.`;
+      }
+
+      function toggleSeat(id, tier) {
+        if (selectedSeats.has(id)) selectedSeats.delete(id);
+        else selectedSeats.set(id, tier);
+        renderSeats();
+        renderSummary();
+        document.getElementById("seat-status").textContent =
+          selectedSeats.has(id) ? `Đã chọn ghế ${id}.` : `Đã bỏ chọn ghế ${id}.`;
+      }
+
+      function renderSummary() {
+        const list = document.getElementById("selected-list");
+        list.replaceChildren();
+        let total = 0;
+        selectedSeats.forEach((tier, id) => {
+          const item = document.createElement("li");
+          const info = document.createElement("span");
+          const name = document.createElement("strong");
+          const detail = document.createElement("small");
+          const price = document.createElement("strong");
+          name.textContent = tiers[tier].name;
+          detail.textContent = `Hàng ${id.split("-")[0]} · Ghế ${id.split("-")[1]}`;
+          info.append(name, detail);
+          price.textContent = tiers[tier].price.toLocaleString("vi-VN") + "đ";
+          item.append(info, price);
+          list.append(item);
+          total += tiers[tier].price;
+        });
+        if (selectedSeats.size === 0) {
+          const item = document.createElement("li");
+          item.textContent = "Chưa chọn ghế. Vui lòng chọn ghế trên sơ đồ.";
+          list.append(item);
+        }
+        document.getElementById("ticket-count").textContent = `${selectedSeats.size} vé`;
+        document.getElementById("subtotal").textContent = total.toLocaleString("vi-VN") + "đ";
+        document.getElementById("total").textContent = total.toLocaleString("vi-VN") + "đ";
+        document.getElementById("continue-button").disabled = selectedSeats.size === 0;
+      }
+
+      selectedTierButtons.forEach(button => {
+        button.addEventListener("click", () => {
+          activeTier = button.dataset.tier;
+          selectedTierButtons.forEach(item =>
+            item.setAttribute("aria-pressed", item === button ? "true" : "false")
+          );
+          renderSeats();
+        });
+      });
+
+      document.getElementById("zoom-in").addEventListener("click", () => {
+        zoom = Math.min(1.35, zoom + 0.1);
+        document.getElementById("seat-map").style.transform = `scale(${zoom})`;
+      });
+      document.getElementById("zoom-out").addEventListener("click", () => {
+        zoom = Math.max(0.8, zoom - 0.1);
+        document.getElementById("seat-map").style.transform = `scale(${zoom})`;
+      });
+
+      document.getElementById("booking-form").addEventListener("submit", event => {
+        event.preventDefault();
+        document.getElementById("form-status").textContent =
+          "Đã ghi nhận lựa chọn minh họa. Chức năng nhập thông tin và thanh toán chưa được kết nối.";
+      });
+
+      renderSeats();
+      renderSummary();
+    })();
+  </script>
 </body>
 </html>
