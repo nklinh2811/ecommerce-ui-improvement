@@ -26,12 +26,35 @@
     </section>
 
     <div class="booking-layout">
+      <section class="panel ticket-panel" aria-labelledby="ticket-heading">
+        <div class="section-heading"><div><p class="eyebrow">KHU VỰC 01</p><h2 id="ticket-heading">Hạng vé</h2></div></div>
+        <p class="helper-text">Bước 1: Chọn hạng vé phù hợp, sau đó chọn ghế trong sơ đồ bên dưới.</p>
+        <div class="ticket-options">
+          <div class="ticket-option ticket-option--active">
+            <span class="ticket-color ticket-color--rose" aria-hidden="true"></span>
+            <div class="ticket-copy"><h3>Hoa hồng</h3><p>Khu trung tâm · Tầm nhìn gần sân khấu</p><span class="availability">Còn vé · minh họa</span></div>
+            <strong>350.000đ</strong>
+          </div>
+          <div class="ticket-option">
+            <span class="ticket-color ticket-color--gold" aria-hidden="true"></span>
+            <div class="ticket-copy"><h3>Hướng dương</h3><p>Khu giữa · Góc nhìn cân đối</p><span class="availability">Còn vé · minh họa</span></div>
+            <strong>250.000đ</strong>
+          </div>
+          <div class="ticket-option">
+            <span class="ticket-color ticket-color--blue" aria-hidden="true"></span>
+            <div class="ticket-copy"><h3>Tulip</h3><p>Khu phía sau · Lựa chọn tiết kiệm</p><span class="availability">Còn vé · minh họa</span></div>
+            <strong>180.000đ</strong>
+          </div>
+        </div>
+        <p class="demo-disclaimer">Tên hạng vé, giá và vị trí chỉ là ví dụ, không phải thông tin bán vé thật.</p>
+      </section>
+
       <section class="seat-panel panel" aria-labelledby="seat-heading">
         <div class="section-heading">
-          <div><p class="eyebrow">KHU VỰC 01</p><h2 id="seat-heading">Sơ đồ chỗ ngồi</h2></div>
+          <div><p class="eyebrow">KHU VỰC 02</p><h2 id="seat-heading">Sơ đồ chỗ ngồi</h2></div>
           <div class="zoom-controls" aria-label="Điều khiển sơ đồ"><button type="button" aria-label="Thu nhỏ sơ đồ" title="Thu nhỏ">−</button><button type="button" aria-label="Phóng to sơ đồ" title="Phóng to">+</button></div>
         </div>
-        <p class="helper-text">Chọn ghế bạn muốn. Sơ đồ bên dưới là dữ liệu minh họa cho bài tập.</p>
+        <p class="helper-text">Bước 2: Chọn ghế còn trống thuộc hạng vé bạn đã chọn. Sơ đồ bên dưới là dữ liệu minh họa cho bài tập.</p>
         <div class="legend" aria-label="Chú thích trạng thái ghế">
           <span><i class="legend-seat legend-seat--available"></i>Còn trống</span>
           <span><i class="legend-seat legend-seat--selected">✓</i>Đang chọn</span>
@@ -62,39 +85,17 @@
         <div class="map-note"><span class="info-icon">i</span><p><strong>Mẹo chọn ghế</strong><br>Chạm vào ghế còn trống để chọn hoặc bỏ chọn. Trên điện thoại, vuốt ngang để xem toàn bộ sơ đồ.</p></div>
       </section>
 
-      <aside class="details-column" aria-label="Thông tin vé và đơn hàng">
-        <section class="panel ticket-panel" aria-labelledby="ticket-heading">
-          <div class="section-heading"><div><p class="eyebrow">KHU VỰC 02</p><h2 id="ticket-heading">Hạng vé</h2></div></div>
-          <p class="helper-text">Chọn hạng để xem khu vực tương ứng trên sơ đồ.</p>
-          <div class="ticket-option ticket-option--active">
-            <span class="ticket-color ticket-color--rose" aria-hidden="true"></span>
-            <div class="ticket-copy"><h3>Hoa hồng</h3><p>Khu trung tâm · Tầm nhìn gần sân khấu</p><span class="availability">Còn vé · minh họa</span></div>
-            <strong>350.000đ</strong>
-          </div>
-          <div class="ticket-option">
-            <span class="ticket-color ticket-color--gold" aria-hidden="true"></span>
-            <div class="ticket-copy"><h3>Hướng dương</h3><p>Khu giữa · Góc nhìn cân đối</p><span class="availability">Còn vé · minh họa</span></div>
-            <strong>250.000đ</strong>
-          </div>
-          <div class="ticket-option">
-            <span class="ticket-color ticket-color--blue" aria-hidden="true"></span>
-            <div class="ticket-copy"><h3>Tulip</h3><p>Khu phía sau · Lựa chọn tiết kiệm</p><span class="availability">Còn vé · minh họa</span></div>
-            <strong>180.000đ</strong>
-          </div>
-          <p class="demo-disclaimer">Tên hạng vé, giá và vị trí chỉ là ví dụ, không phải thông tin bán vé thật.</p>
-        </section>
-
-        <section class="panel summary-panel" aria-labelledby="summary-heading">
-          <div class="section-heading"><div><p class="eyebrow">KHU VỰC 03</p><h2 id="summary-heading">Vé đã chọn</h2></div><span class="count-pill">1 vé</span></div>
-          <div class="selected-ticket"><div><strong>Hoa hồng</strong><p>Hàng A · Ghế 3</p></div><strong>350.000đ</strong></div>
-          <div class="price-line"><span>Tạm tính</span><span>350.000đ</span></div>
-          <div class="price-line"><span>Phí dịch vụ</span><span>Chưa tính</span></div>
-          <div class="price-total"><span>Tổng cộng dự kiến</span><strong>350.000đ</strong></div>
-          <button class="continue-button" type="button">Tiếp tục <span aria-hidden="true">→</span></button>
-          <p class="secure-note">⌑ Kiểm tra kỹ hạng vé và vị trí trước khi tiếp tục.</p>
-        </section>
-      </aside>
+      <section class="panel summary-panel" aria-labelledby="summary-heading">
+        <div class="section-heading"><div><p class="eyebrow">KHU VỰC 03</p><h2 id="summary-heading">Vé đã chọn</h2></div><span class="count-pill">1 vé</span></div>
+        <div class="selected-ticket"><div><strong>Hoa hồng</strong><p>Hàng A · Ghế 3</p></div><strong>350.000đ</strong></div>
+        <div class="price-line"><span>Tạm tính</span><span>350.000đ</span></div>
+        <div class="price-line"><span>Phí dịch vụ</span><span>Chưa tính</span></div>
+        <div class="price-total"><span>Tổng cộng dự kiến</span><strong>350.000đ</strong></div>
+        <button class="continue-button" type="button">Tiếp tục <span aria-hidden="true">→</span></button>
+        <p class="secure-note">⌑ Kiểm tra kỹ hạng vé và vị trí trước khi tiếp tục.</p>
+      </section>
     </div>
+
     <section id="events" class="sample-products" aria-labelledby="sample-heading">
       <div><p class="eyebrow">THẺ SỰ KIỆN MẪU</p><h2 id="sample-heading">Khám phá sự kiện khác</h2><p class="helper-text">Bốn thẻ mẫu minh họa khu vực sản phẩm/sự kiện theo yêu cầu bài tập.</p></div>
       <div class="event-grid">
