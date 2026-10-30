@@ -161,15 +161,6 @@
     .map-caption { margin: 12px 0 0; color: var(--muted); font-size: .82rem; text-align: center; }
     .booking-grid { display: grid; grid-template-columns: minmax(0, 1.55fr) minmax(270px, .8fr); gap: 18px; align-items: start; }
    
-.ticket-list { 
-        display: grid; 
-        grid-template-columns: repeat(3, minmax(0, 1fr)); 
-        gap: 16px; 
-        margin: 20px 0 0; 
-        padding: 0; 
-        list-style: none;  
-    }
-
    .ticket-list {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -262,10 +253,32 @@
     .map-note { margin: 12px 0 0; padding: 11px 13px; color: #5e536a; background: #f5f1f8; border-radius: 10px; font-size: .86rem; }
     .summary-panel { position: sticky; top: 16px; }
     .count-pill { padding: 5px 9px; color: var(--brand); background: var(--brand-soft); border-radius: 99px; font-size: .82rem; font-weight: 750; }
-    .selected-list { margin: 14px 0; padding: 0; list-style: none; }
-    .selected-list li { display: flex; justify-content: space-between; gap: 12px; padding: 10px 0; border-bottom: 1px solid var(--line); font-size: .9rem; }
-    .selected-list small { display: block; color: var(--muted); }
-    .price-line, .price-total { display: flex; justify-content: space-between; gap: 12px; padding: 8px 0; }
+    .selected-list { 
+          margin: 14px 0; 
+          padding: 0; 
+          list-style: none; 
+    }
+    .selected-list li { 
+          display: flex; 
+          justify-content: space-between; 
+          gap: 12px; 
+          padding: 10px 0; 
+          border-bottom: 1px solid var(--line); 
+          font-size: .9rem; 
+    }
+    .selected-list small { 
+          display: block; 
+          color: var(--muted); 
+    }
+   .price-line,
+.price-total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: 12px;
+    padding: 8px 0;
+}
     .price-line { color: var(--muted); font-size: .9rem; }
     .price-total { margin-top: 6px; padding-top: 14px; border-top: 1px solid var(--line); font-weight: 800; }
     .continue-button { width: 100%; margin-top: 14px; padding: 13px 16px; color: white; background: var(--brand); font-weight: 750; }
