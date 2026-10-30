@@ -84,15 +84,23 @@
     h3 { margin: 0; font-size: 1rem; }
     .event-meta { display: flex; flex-wrap: wrap; gap: 8px 20px; margin: 0; color: var(--muted); }
     .steps { flex: 0 0 auto; }
-    .steps ol {
-      display: flex;
-      gap: 18px;
-      align-items: center;
-      margin: 0;
-      padding: 0;
-      list-style: none;
-    }
-    .steps li { color: #928c99; font-size: .9rem; white-space: nowrap; }
+    
+.steps ol {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.steps li {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    white-space: nowrap;
+}
     .steps li[aria-current="step"] { color: var(--brand); font-weight: 750; }
     .step-number {
       display: inline-grid;
@@ -153,32 +161,30 @@
     .map-caption { margin: 12px 0 0; color: var(--muted); font-size: .82rem; text-align: center; }
     .booking-grid { display: grid; grid-template-columns: minmax(0, 1.55fr) minmax(270px, .8fr); gap: 18px; align-items: start; }
     .ticket-list { 
-          display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 16px;
-
-    margin: 20px 0 0;
-    padding: 0;
-    list-style: none; 
+          .ticket-list { 
+        display: grid; 
+        grid-template-columns: repeat(3, minmax(0, 1fr)); 
+        gap: 16px; 
+        margin: 20px 0 0; 
+        padding: 0; 
+        list-style: none;  
     }
 
-    .ticket-choice {
+   .ticket-choice {
       width: 100%;
-      min-height: 150px;
-      padding: 20px;
-
+      min-height: 200px;
+      padding: 30px;
       display: flex;
+         
       flex-direction: column;
       align-items: flex-start;
       gap: 10px;
-
       text-align: left;
+         
       color: var(--ink);
       background: white;
-
-      border: 1px solid var(--line);
-      border-radius: 16px;
-
+      border: 5px solid var(--line);
+      border-radius: 30px;
       cursor: pointer;
     }
     .ticket-choice:hover { border-color: var(--brand); }
@@ -282,3 +288,9 @@
       .card-bottom { align-items: flex-start; flex-direction: column; }
       .site-footer { padding: 16px; flex-direction: column; }
     }
+button:focus-visible,
+a:focus-visible,
+input:focus-visible {
+    outline: 3px solid var(--brand);
+    outline-offset: 3px;
+}
