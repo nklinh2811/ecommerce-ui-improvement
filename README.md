@@ -1,54 +1,41 @@
-# E-commerce UI Improvement
+BÀI TẬP CÁ NHÂN – BUỔI 2
 
 ## 1. Giới thiệu
-Dự án được thực hiện nhằm khảo sát và cải tiến giao diện website Ticketbox bằng HTML5 và CSS3. 
-Khu vực được lựa chọn để cải tiến là giao diện chọn vé sự kiện, tập trung vào việc nâng cao khả năng nhận diện trạng thái ghế, 
-trình bày thông tin hạng vé rõ ràng và tối ưu bố cục trên máy tính và điện thoại.
+Bài tập Buổi 2 tiếp tục phát triển website từ Buổi 1, tập trung vào việc cải thiện giao diện trang chọn vé của Ticketbox. Mục tiêu là giúp người dùng dễ dàng quan sát sơ đồ chỗ ngồi, lựa chọn khu vực và hạng vé, đồng thời cải thiện cách bố trí các thành phần trên giao diện.
 
 ## 2. Website tham khảo
-- Tên website: Ticketbox
-- URL: https://ticketbox.vn/
-- Khu vực đã khảo sát: Trang chủ, danh mục sự kiện, trang chi tiết sự kiện, chức năng tìm kiếm và quy trình đặt vé.
+Website tham khảo: Ticketbox
+Khu vực cải tiến: Giao diện trang chọn vé sự kiện.
+Định hướng cải tiến: Điều chỉnh cách hiển thị sơ đồ chỗ ngồi, thông tin hạng vé và khu vực đặt vé nhằm giúp người dùng dễ quan sát và thao tác hơn.
 
-## 3. Chức năng
-Giao diện được xây dựng nhằm minh họa quy trình lựa chọn vé sự kiện, bao gồm:
-- Hiển thị thông tin sự kiện, thời gian và địa điểm tổ chức.
-- Hiển thị sơ đồ chỗ ngồi theo hàng và số ghế.
-- Phân biệt bốn trạng thái ghế: còn trống, đang chọn, đang được giữ và đã bán.
-- Hiển thị các hạng vé, giá vé và mô tả vị trí tương ứng.
-- Trình bày thông tin vé đã chọn và khu vực tóm tắt đơn hàng.
-- Hiển thị các sự kiện gợi ý liên quan.
-- Hỗ trợ bố cục đáp ứng trên máy tính, máy tính bảng và điện thoại.
+3. Những kỹ thuật HTML5/CSS3 đã thực hành
+Trong quá trình phát triển giao diện, bài tập sử dụng các kỹ thuật cơ bản sau:
+HTML5: Sử dụng các thẻ cấu trúc và thẻ ngữ nghĩa để tổ chức nội dung trang web.
+CSS Selector: Sử dụng bộ chọn CSS để định dạng từng thành phần giao diện.
+Box Model: Điều chỉnh margin, padding, border và kích thước phần tử.
+Flexbox: Bố trí và căn chỉnh các thành phần theo hàng hoặc cột.
+CSS Grid: Chia bố cục thành các cột để hiển thị danh sách hạng vé.
 
-## 4. Công nghệ
-- HTML5: Xây dựng cấu trúc và phân chia các khu vực nội dung của giao diện.
-- CSS3: Thiết kế màu sắc, kiểu chữ, sơ đồ ghế, thẻ hạng vé và bố cục trang.
-- CSS Grid và Flexbox: Tổ chức bố cục hai cột trên máy tính và điều chỉnh cách sắp xếp nội dung trên màn hình nhỏ.
-- Media Queries: Điều chỉnh giao diện theo kích thước màn hình.
+## 4. Những thay đổi đã thực hiện
+Điều chỉnh bố cục giao diện trang chọn vé để nội dung được sắp xếp rõ ràng hơn.
+Cải thiện cách hiển thị sơ đồ chỗ ngồi và trạng thái ghế.
+Thiết kế lại các thẻ hạng vé, điều chỉnh kích thước và khoảng cách giữa các thành phần.
+Bổ sung cách bố trí phù hợp với màn hình điện thoại.
+Điều chỉnh màu sắc, đường viền và khoảng cách để tăng khả năng quan sát.
 
-## 5. Cách chạy
-Tải repository về máy tính.
-Mở thư mục dự án.
-Mở file index.html bằng trình duyệt web.
-Thay đổi kích thước cửa sổ trình duyệt để kiểm tra khả năng hiển thị trên các thiết bị.
+## 5. Công cụ AI đã sử dụng và cách kiểm tra kết quả
+Trong quá trình thực hiện, sử dụng ChatGPT để hỗ trợ phân tích giao diện, đề xuất cách bố trí HTML/CSS và kiểm tra một số lỗi trong quá trình phát triển.
+Các nội dung có sử dụng AI hỗ trợ:
+Đề xuất cải thiện bố cục và kích thước các thành phần giao diện.
+Giải thích và hỗ trợ sử dụng CSS Selector, Box Model, Flexbox và CSS Grid.
+Hỗ trợ rà soát mã HTML/CSS và tìm nguyên nhân gây lỗi hiển thị.
 
-## 6. Cải tiến đã thực hiện
-Qua quá trình khảo sát, giao diện chọn vé được xác định có một số vấn đề về khả năng nhận diện ghế, 
-cách trình bày thông tin hạng vé và bố cục lựa chọn. Vì vậy, giao diện được cải tiến theo các hướng sau:
+**Cách kiểm tra và điều chỉnh:**
+Sau khi tham khảo đề xuất từ AI, tiến hành đối chiếu với giao diện thực tế, kiểm tra mã nguồn và chạy thử trên trình duyệt. Những nội dung chưa phù hợp được điều chỉnh lại để bảo đảm bố cục, kích thước và khả năng hiển thị đúng với yêu cầu bài tập.
 
-- Cải thiện khả năng nhận diện trạng thái ghế: Sử dụng màu sắc và ký hiệu riêng để phân biệt ghế còn trống, đang chọn, đang được giữ và đã bán.
-- Bổ sung thông tin hạng vé: Trình bày tên hạng vé, giá và mô tả vị trí nhằm hỗ trợ người dùng so sánh các lựa chọn.
-- Điều chỉnh bố cục: Sắp xếp lại khu vực hạng vé, sơ đồ chỗ ngồi và tóm tắt đơn hàng theo trình tự dễ hiểu hơn.
-- Tối ưu khả năng hiển thị: Sử dụng CSS Grid, Flexbox và Media Queries để điều chỉnh bố cục theo kích thước màn hình.
-- Tăng khả năng tiếp cận: Bổ sung trạng thái focus và các ký hiệu trực quan nhằm giúp người dùng nhận biết thành phần giao diện dễ dàng hơn.
+## 6. Đường dẫn repository và page 
+Link GitHub Repository: https://github.com/nklinh2811/ecommerce-ui-improvement
+Link GitHub Pages: https://nklinh2811.github.io/ecommerce-ui-improvement/
 
-## 7. Hỗ trợ từ AI
-AI được sử dụng như công cụ hỗ trợ trong quá trình khảo sát, phân tích và phát triển giao diện. 
-Cụ thể, AI hỗ trợ xác định các vấn đề có thể ảnh hưởng đến trải nghiệm người dùng, đề xuất phương án cải tiến bố cục, 
-xây dựng cấu trúc HTML5 và tổ chức CSS3 cho giao diện chọn vé.
 
-Sau khi nhận được kết quả hỗ trợ, em tiến hành xem xét mức độ phù hợp với yêu cầu bài tập, 
-kiểm tra giao diện trên trình duyệt ở các kích thước màn hình khác nhau và điều chỉnh bố cục khu vực hạng vé, 
-sơ đồ ghế nhằm làm rõ trình tự lựa chọn. Em cũng rà soát cấu trúc mã nguồn và đường dẫn CSS 
-để đảm bảo giao diện hiển thị đúng sau khi sắp xếp lại các tệp.
 
